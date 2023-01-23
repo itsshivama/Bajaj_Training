@@ -1,0 +1,85 @@
+JAVA (Day 3)
+
+$ FileNotFoundException is a derived class of IOException (also, a checked exception class)
+
+$ FileNotFoundException -
+	- When file is not available
+	- When read access is denied
+
+$ IOException -
+	- Invalid encoding
+
+$ Iterator goes in one direction whereas ListIterator goes in both direction.
+
+$ Coding Standard - 
+	-Don’t import the whole library i.e(*). Import only the required one.
+	- always give package name in small letters
+
+$ equals() and hashCode() are provided in java.lang library and not in the collection framework. equals() uses hashCode(). hashCode() is also independently used in HashSet (during insertion, deletion and checking).
+Two objects are equal if there hasCode() output is equal.
+
+$ Comparable VS Comparator -
+
+	- Comparable only uses single element to sort whereas Comparator allows to sort on the basis of multiple elements.
+	- Comparable [CompareTo()] and Comparator[Compare()]
+	- Comparable in java.lang.package and Comparator in java.util package
+
+$ Comparator interface is implemented to make custom Comparator
+
+	public class MyCustomComparator implements Comparator<String> {
+    @Override
+    public int compare(String o1, String o2) {
+        return o1.length()-o2.length();
+    }
+}
+
+	Usage: 
+	List<String> l = new ArrayList<String>();
+
+	l.add("Sumit");
+	l.add("Devansh");
+	l.add("Pratham");
+	l.add("Shivam");
+	l.add("Saurabh");
+	Collections.sort(l,new MyCustomComparator());
+
+
+$ Comparable interface is implemented in the custom class itself 
+
+	public class TeamScoreCompare implements Comparable<TeamScoreCompare> {
+
+    int score;
+    String name;
+
+    TeamScoreCompare(int score, String name)
+    {
+        this.name = name;
+        this.score = score;
+    }
+    @Override
+    public int compareTo(TeamScoreCompare o) {
+        if(o.score<score)
+            return -1;
+        else if(o.score>score)
+            return 1;
+        else
+            return 0;
+    }
+
+    @Override
+    public String toString() {
+        return this.name;
+    }
+}
+
+	Usage:
+	List<TeamScoreCompare> lt = new ArrayList<TeamScoreCompare>();
+	lt.add(new TeamScoreCompare(45, "FCB"));
+	lt.add(new TeamScoreCompare(30, "RMA"));	
+	lt.add(new TeamScoreCompare(40, "PSG"));
+	
+	System.out.println(lt);
+	Collections.sort(lt);
+	System.out.println(lt);
+
+

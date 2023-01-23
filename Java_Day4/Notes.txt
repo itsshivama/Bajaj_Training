@@ -1,0 +1,58 @@
+JAVA (Day 4)
+
+$ Hashmaps
+
+	Syntax -
+	Map<Integer, String> m = new HashMap<Integer, String>();
+
+	m.put(1,”a”);
+
+	- Get key and value together in single entry
+
+	Set set = map.entrySet();
+	Iterator its = set.Iterator();
+	
+	Map.Entry entry = (Map.Entry)its.next();
+	SOP(entry.getKey() + entry.getValue());
+
+	- Get key set only - map.keySet();
+
+$ LinkedHashMap has working and time complexity as HashMap and it also maintains the insertion order.
+
+$ For custom data types as keys, we need to implement Comparable interface otherwise compiler won’t know how to arrange the keys in maps. 
+
+$ Default functions are full functions i.e. functions with body that can be declared inside the interfaces. 
+
+	Use: It is helpful in maintenance phase. In case of production, any change in the code can be corrected. If function is added to an interface, the same function can be implemented the classes inheriting the interface. But after production in maintenance phase, it get complex and error prone to add a function that requires implementation in multiple classes. Therefore, it is easy to us “default” function.
+
+$ static function also has a body within an interface. It belongs to interface similar to static function belongs to a class.
+
+$ Functional Interface - An interface that contains only one abstract method. It can contain any amount of default, static methods.
+
+	Used : Lambda Function [ (parameters) -> {} ]
+
+$ Stream API -
+	
+	List<String> list = new ArrayList<>();
+
+	list.add("Sumit");
+	list.add("Shivam");
+	list.add("Saurabh”);
+	list.add("Devansh");
+	
+	List<Integer> size = list.stream()
+	        .map(String::length)
+	        .filter(num -> num>5)
+	        .toList();
+	System.out.println(size);
+
+	- forEach() can be used at the end but the end output will not be collected
+	- reduce to perform operation on the whole list to get single output
+
+$ Stream Creation -
+
+	- Stream.empty() - returns empty stream and not null
+	- Any collection stream
+		- Collection collection = Array.asList(“a”,”b”,”c”)
+		- collection.stream();
+	- Stream.of(“a”,”b”,”c”)

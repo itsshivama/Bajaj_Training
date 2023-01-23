@@ -1,0 +1,21 @@
+JAVA (Day 2)
+
+$ 3 types of relationship -
+
+	- inheritance (IS-A)
+	- composition (HAS-A)
+	- aggregation (HAS-A)
+
+$ Composition Relationship - 
+When a class cannot exist without other. The creation of object of one class triggers the creation of object of other class. One class is dependent on other and cannot exist without other. The ‘Human’ class depends on ‘Heart’ and ‘Lungs’.
+
+$ By default, default constructor of the parent class is called when child class is created but the object is not created for parent class[CHECKED]
+
+$ Throws keyword - When declared out of a function, informs the calling function to handle the exception declared in throws. Ex -
+	main() {
+        	func()
+		}
+
+	func() throws Exp1, Exp2 {}
+
+	Here, ‘throws’ keyword allows the exceptions listed in the function to be passed without showing error. Also, it tells the main function that these exceptions can be thrown by func(), so that main() can catch it.

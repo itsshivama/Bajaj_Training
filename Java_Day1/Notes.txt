@@ -1,0 +1,9 @@
+JAVA (Day 1)
+
+
+StringBuffer - Async
+StringBuilder - Not Async
+
+$ StringBuilder allocates less space than StringBuffer
+
+$ String when initialised using “new” literal does not creates sting in the string pool but separately.
