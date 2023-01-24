@@ -1,4 +1,4 @@
-package PehlaPackage;
+package Pac;
 
 import java.util.*;
 
