@@ -4,22 +4,28 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 
-<bean id="employee" class="Demo_Spring_Bajaj.Employee">
+<bean id="employee1" class="Demo_Spring_Bajaj.Employee">
     <property name="eid" value="101"/>
     <property name="name" value="Abhishom"/>
     <property name="sal" value="10000"/>
 </bean>
 
-    <bean id="employee1" class="Demo_Spring_Bajaj.Employee">
+    <bean id="employee2" class="Demo_Spring_Bajaj.Employee">
         <property name="eid" value="102"/>
         <property name="name" value="Atharva"/>
         <property name="sal" value="20000"/>
     </bean>
 
-    <bean id="employee3" class="Demo_Spring_Bajaj.Employee">
-        <constructor-arg value="103"/>
-        <constructor-arg value="Utkarsh"/>
-        <constructor-arg value="15000"/>
+<!--    <bean id="employee3" class="Demo_Spring_Bajaj.Employee">-->
+<!--        <constructor-arg value=""/>-->
+<!--        <constructor-arg value="103"/>-->
+<!--        <constructor-arg value="Utkarsh"/>-->
+<!--        <constructor-arg value="15000"/>-->
+<!--    </bean>-->
+
+    <bean id="empObj" class="Demo_Spring_Bajaj.Address">
+        <constructor-arg value="Hyatt"/>
+        <constructor-arg value="Pune"/>
     </bean>
 
 </beans>

@@ -5,11 +5,13 @@ public class Employee {
     private int eid;
     private int sal;
 
-    Employee(){
+    private Address address;
 
-    }
-    Employee(int eid, String name, int sal){
+    Employee(){}
+
+    Employee(Address address, int eid, String name, int sal){
         System.out.println("Inside Constructor");
+        this.address = address;
         this.name = name;
         this.eid = eid;
         this.sal = sal;
@@ -25,7 +27,6 @@ public class Employee {
     }
 
     public void setEid(int eid) {
-        System.out.println("Inside Setter Method Injection");
         this.eid = eid;
     }
 
@@ -46,5 +47,13 @@ public class Employee {
 
     public String getName() {
         return name;
+    }
+
+    public Address getAddress() {
+        return address;
+    }
+
+    public void setAddress(Address address) {
+        this.address = address;
     }
 }
