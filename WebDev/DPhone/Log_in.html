@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Assignment.css">
-    <script src="Assignment.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="jv.js"></script>
     <title>DPhone</title>
 </head>
 <body>
@@ -15,10 +15,11 @@
       <div class="center">
         <h1>Login</h1>
         <form method="post">
+
           <div class="txt_field">
             <input type="text" required>
             <span></span>
-            <label>Username or Email</label>
+            <label>Username</label>
           </div>
           
           <div class="txt_field">
@@ -26,11 +27,15 @@
             <span></span>
             <label>Password</label>
           </div>
-          <div class="pass">Forgotten Password?</div>
+
+          <div class="pass"><a class="pass" href="fp.html" style="text-decoration: none;">Forgotten Password?</a></div>
+
           <input type="submit" value="Login">
+
           <div class="signup_link">
-            Not a Member? <a href="#">Sign Up</a>
+            Not a Member? <a href="signup.html">Sign Up</a>
           </div>
+
         </form>
       </div>
     </section>
