@@ -1,14 +1,15 @@
 package Demo_Spring_Bajaj;
 
 public class Employee {
-    String name;
-    int eid;
-    int sal;
+    private String name;
+    private int eid;
+    private int sal;
 
     Employee(){
 
     }
     Employee(int eid, String name, int sal){
+        System.out.println("Inside Constructor");
         this.name = name;
         this.eid = eid;
         this.sal = sal;
@@ -23,6 +24,18 @@ public class Employee {
                 '}';
     }
 
+    public void setEid(int eid) {
+        System.out.println("Inside Setter Method Injection");
+        this.eid = eid;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setSal(int sal) {
+        this.sal = sal;
+    }
     public int getEid() {
         return eid;
     }
@@ -33,17 +46,5 @@ public class Employee {
 
     public String getName() {
         return name;
-    }
-
-    public void setEid(int eid) {
-        this.eid = eid;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setSal(int sal) {
-        this.sal = sal;
     }
 }

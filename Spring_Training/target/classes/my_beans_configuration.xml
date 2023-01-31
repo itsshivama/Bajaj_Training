@@ -16,4 +16,10 @@
         <property name="sal" value="20000"/>
     </bean>
 
+    <bean id="employee3" class="Demo_Spring_Bajaj.Employee">
+        <constructor-arg value="103"/>
+        <constructor-arg value="Utkarsh"/>
+        <constructor-arg value="15000"/>
+    </bean>
+
 </beans>
