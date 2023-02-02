@@ -23,9 +23,36 @@
 <!--        <constructor-arg value="15000"/>-->
 <!--    </bean>-->
 
-    <bean id="empObj" class="Demo_Spring_Bajaj.Address">
+<!--    scope is used to create either multiple(prototype) or single(singleton) object for a class -->
+
+    <bean id="empObj" class="Demo_Spring_Bajaj.Address" scope="prototype">
         <constructor-arg value="Hyatt"/>
         <constructor-arg value="Pune"/>
+    </bean>
+
+    <bean id="empObj1" class="Demo_Spring_Bajaj.Employee">
+        <constructor-arg>
+            <bean class="Demo_Spring_Bajaj.Address">
+                <constructor-arg value="Bajaj"/>
+                <constructor-arg value="Finserv"/>
+            </bean>
+        </constructor-arg>
+        <constructor-arg value="107"/>
+        <constructor-arg value="Sanka"/>
+        <constructor-arg value="11000"/>
+    </bean>
+
+    <bean id="employee4" class="Demo_Spring_Bajaj.EmployeeCollection">
+        <constructor-arg value="108"/>
+        <constructor-arg value="Yosho"/>
+        <constructor-arg value="13000"/>
+        <constructor-arg name="languages">
+            <list>
+                <value>English</value>
+                <value>Hindi</value>
+                <value>Marathi</value>
+            </list>
+        </constructor-arg>
     </bean>
 
 </beans>

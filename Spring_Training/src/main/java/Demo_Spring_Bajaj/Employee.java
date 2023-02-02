@@ -17,13 +17,18 @@ public class Employee {
         this.sal = sal;
     }
 
+
     @Override
     public String toString() {
-        return "employee{" +
+        return "Employee{" +
                 "name='" + name + '\'' +
                 ", eid=" + eid +
                 ", sal=" + sal +
-                '}';
+                "}" +
+                " Address{" +
+                "AddressLine1 = " + address.getAddressLine1() +
+                " AddresLine2 = " + address.getAddressLine2() +
+                "}";
     }
 
     public void setEid(int eid) {
