@@ -10,4 +10,4 @@ public class TesterCollection {
         EmployeeCollection ec = (EmployeeCollection) ca.getBean("employee4");
         System.out.println(ec);
     }
-}A
+}

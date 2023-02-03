@@ -7,22 +7,23 @@ public class EmployeeCollection {
     private int eid;
     private int sal;
     private List<String> languages;
+
+    @Override
+    public String toString() {
+        return "EmployeeCollection{" +
+                "name='" + name + '\'' +
+                ", eid=" + eid +
+                ", sal=" + sal +
+                ", languages=" + languages +
+                '}';
+    }
+
     public EmployeeCollection(int eid, String name, int sal, List<String> languages){
         System.out.println("Inside Constructor");
         this.languages=languages;
         this.name = name;
         this.eid = eid;
         this.sal = sal;
-    }
-
-    @Override
-    public String toString(){
-        return "EmployeeCollection{" +
-                "Eid = " + eid +
-                " Name = " + name +
-                " Salary = " + sal +
-                " Languages = " + languages +
-                "} ";
     }
 
     public String getName() {
