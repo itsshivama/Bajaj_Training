@@ -24,6 +24,10 @@ public class EmployeeEntity {
 			this.did = did;
 		}
 
+		public EmployeeEntity(int eid){
+			this.eid=eid;
+		}
+
 	public EmployeeEntity() {}
 
 	public int getId() {

@@ -11,10 +11,12 @@ public class EmployeeDaoImpl {
 	@Autowired
 	private EmployeeDao employeeDao;
 	
-	public void addStudent(int id, String ename, int salary, int did) {
+	public void addEmployee(int id, String ename, int salary, int did) {
 		EmployeeEntity employeeEntity = new EmployeeEntity(id,ename,salary,did);
 		employeeDao.save(employeeEntity);
 	}
-	
-	
+	public void deleteEmployee(int eid) {
+		EmployeeEntity employeeEntity = new EmployeeEntity(eid);
+		employeeDao.delete(employeeEntity);
+	}
 }

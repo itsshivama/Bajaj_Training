@@ -12,18 +12,26 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class EmployeeController {
 	
 	@Autowired
-	EmployeeDaoImpl studentService;
+	EmployeeDaoImpl employeeDaoI;
 	
-	@GetMapping("/form")
+	@GetMapping("/form-add")
 	public String employeeData() {
 		return "EmployeeData";
 	}
 	
 	@PostMapping("/add")
 	@ResponseBody
-	public String addStudent(@RequestParam("eid") int eid , @RequestParam("ename") String ename, @RequestParam("Salary") int salary, @RequestParam("did") int did) {
-		studentService.addStudent(eid, ename, salary, did);
+	public String addEmployee(@RequestParam("eid") int eid , @RequestParam("ename") String ename, @RequestParam("Salary") int salary, @RequestParam("did") int did) {
+		employeeDaoI.addEmployee(eid, ename, salary, did);
 		return "success";
 	}
+	@GetMapping("/form-delete")
+	public String employeeDelete(){return "EmployeeDelete";}
 
+	@PostMapping("/delete")
+	@ResponseBody
+	public String deleteEmployee(@RequestParam("eid") int eid) {
+		employeeDaoI.deleteEmployee(eid);
+		return "success";
+	}
 }
