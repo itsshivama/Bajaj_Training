@@ -19,4 +19,9 @@ public class EmployeeDaoImpl {
 		EmployeeEntity employeeEntity = new EmployeeEntity(eid);
 		employeeDao.delete(employeeEntity);
 	}
+
+	public void updateEmployee(int id, String ename, int salary, int did) {
+		EmployeeEntity employeeEntity = new EmployeeEntity(id,ename,salary,did);
+		employeeDao.save(employeeEntity);
+	}
 }

@@ -21,17 +21,27 @@ public class EmployeeController {
 	
 	@PostMapping("/add")
 	@ResponseBody
-	public String addEmployee(@RequestParam("eid") int eid , @RequestParam("ename") String ename, @RequestParam("Salary") int salary, @RequestParam("did") int did) {
+	public String addEmployee(@RequestParam("Salary") int salary, @RequestParam("did") int did, @RequestParam("eid") int eid , @RequestParam("ename") String ename) {
 		employeeDaoI.addEmployee(eid, ename, salary, did);
-		return "success";
+		return "success.html";
 	}
-	@GetMapping("/form-delete")
+	@GetMapping("/delete-employee")
 	public String employeeDelete(){return "EmployeeDelete";}
 
 	@PostMapping("/delete")
 	@ResponseBody
 	public String deleteEmployee(@RequestParam("eid") int eid) {
 		employeeDaoI.deleteEmployee(eid);
-		return "success";
+		return "success.html";
+	}
+
+	@GetMapping("/update-employee")
+	public String employeeUpdate(){return "UpdateEmployee";}
+
+	@PostMapping("/form-update")
+	@ResponseBody
+	public String updateEmployee(@RequestParam("Salary") int salary, @RequestParam("did") int did, @RequestParam("eid") int eid , @RequestParam("ename") String ename){
+		employeeDaoI.updateEmployee(eid, ename, salary, did);
+		return "success.html";
 	}
 }
