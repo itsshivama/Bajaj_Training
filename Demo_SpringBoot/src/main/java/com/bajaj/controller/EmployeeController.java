@@ -1,7 +1,6 @@
 package com.bajaj.controller;
 
 import com.bajaj.service.EmployeeDaoImpl;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -10,10 +9,12 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class EmployeeController {
-	
-	@Autowired
-	EmployeeDaoImpl employeeDaoI;
-	
+	final EmployeeDaoImpl employeeDaoI;
+
+	public EmployeeController(EmployeeDaoImpl employeeDaoI) {
+		this.employeeDaoI = employeeDaoI;
+	}
+
 	@GetMapping("/form-add")
 	public String employeeData() {
 		return "EmployeeData";
