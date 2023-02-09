@@ -1,7 +1,7 @@
-package com.bajaj.project.service;
+package com.bajaj.service;
 
-import com.bajaj.project.dao.EmployeeDao;
-import com.bajaj.project.entity.EmployeeEntity;
+import com.bajaj.dao.EmployeeDao;
+import com.bajaj.entity.EmployeeEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

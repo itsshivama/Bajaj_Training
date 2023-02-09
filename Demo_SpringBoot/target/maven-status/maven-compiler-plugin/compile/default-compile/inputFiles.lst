@@ -1,5 +1,5 @@
-/Users/shivamagrawal/Documents/GitHub/Bajaj_Training/Demo_SpringBoot/src/main/java/com/bajaj/project/dao/StudentDao.java
-/Users/shivamagrawal/Documents/GitHub/Bajaj_Training/Demo_SpringBoot/src/main/java/com/bajaj/project/DemoApplication.java
-/Users/shivamagrawal/Documents/GitHub/Bajaj_Training/Demo_SpringBoot/src/main/java/com/bajaj/project/controller/StudentController.java
-/Users/shivamagrawal/Documents/GitHub/Bajaj_Training/Demo_SpringBoot/src/main/java/com/bajaj/project/service/StudentDaoImpl.java
-/Users/shivamagrawal/Documents/GitHub/Bajaj_Training/Demo_SpringBoot/src/main/java/com/bajaj/project/entity/StudentEntity.java
+/Users/shivamagrawal/Documents/GitHub/Bajaj_Training/Demo_SpringBoot/src/main/java/com/bajaj/DemoApplication.java
+/Users/shivamagrawal/Documents/GitHub/Bajaj_Training/Demo_SpringBoot/src/main/java/com/bajaj/controller/EmployeeController.java
+/Users/shivamagrawal/Documents/GitHub/Bajaj_Training/Demo_SpringBoot/src/main/java/com/bajaj/service/EmployeeDaoImpl.java
+/Users/shivamagrawal/Documents/GitHub/Bajaj_Training/Demo_SpringBoot/src/main/java/com/bajaj/entity/EmployeeEntity.java
+/Users/shivamagrawal/Documents/GitHub/Bajaj_Training/Demo_SpringBoot/src/main/java/com/bajaj/dao/EmployeeDao.java

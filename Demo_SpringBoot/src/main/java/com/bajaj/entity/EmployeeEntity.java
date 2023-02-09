@@ -1,5 +1,5 @@
 
-package com.bajaj.project.entity;
+package com.bajaj.entity;
 
 
 import jakarta.persistence.Entity;

@@ -1,6 +1,6 @@
-package com.bajaj.project.dao;
+package com.bajaj.dao;
 
-import com.bajaj.project.entity.EmployeeEntity;
+import com.bajaj.entity.EmployeeEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

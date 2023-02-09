@@ -6,8 +6,23 @@
   <component name="ChangeListManager">
     <list default="true" id="f23ad0b4-d509-46ee-9dc3-0d4f691b8558" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bajaj/project/controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bajaj/project/controller/EmployeeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bajaj/project/service/EmployeeDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bajaj/project/service/EmployeeDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bajaj/project/DemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bajaj/DemoApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bajaj/project/controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bajaj/controller/EmployeeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bajaj/project/dao/EmployeeDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bajaj/dao/EmployeeDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bajaj/project/entity/EmployeeEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bajaj/entity/EmployeeEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bajaj/project/service/EmployeeDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bajaj/service/EmployeeDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/EmployeeData.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/EmployeeData.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/bajaj/project/DemoApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/bajaj/DemoApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bajaj/project/DemoApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bajaj/project/controller/EmployeeController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bajaj/project/dao/EmployeeDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bajaj/project/entity/EmployeeEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bajaj/project/service/EmployeeDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/EmployeeData.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/EmployeeData.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/simple_springboot_project-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/simple_springboot_project-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/simple_springboot_project-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/simple_springboot_project-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.bajaj.project.DemoApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.bajaj.project.DemoApplicationTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.bajaj.project.DemoApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.bajaj.project.DemoApplicationTests.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,10 +91,23 @@
       <recent name="com.bajaj" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.DemoApplication">
+  <component name="RunManager" selected="Spring Boot.DemoApplication (1)">
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="Demo_SpringBoot" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.bajaj.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DemoApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="simple_springboot_project" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.bajaj.DemoApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bajaj.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -91,6 +119,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.DemoApplication (1)" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -101,7 +134,7 @@
       <option name="presentableId" value="Default" />
       <updated>1675747505903</updated>
       <workItem from="1675747508833" duration="13018000" />
-      <workItem from="1675829435292" duration="14855000" />
+      <workItem from="1675829435292" duration="20875000" />
     </task>
     <servers />
   </component>
