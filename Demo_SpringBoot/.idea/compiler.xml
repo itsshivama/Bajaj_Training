@@ -2,21 +2,27 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="RestTemplate" />
         <module name="simple_springboot_project" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Demo_SpringBoot" target="19" />
+      <module name="RestTemplate" target="17" />
+      <module name="Service_Registry" target="19" />
       <module name="simple_springboot_project" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Demo_SpringBoot" options="-parameters" />
+      <module name="RestTemplate" options="-parameters" />
+      <module name="Service_Registry" options="-parameters" />
       <module name="simple_springboot_project" options="-parameters" />
     </option>
   </component>
