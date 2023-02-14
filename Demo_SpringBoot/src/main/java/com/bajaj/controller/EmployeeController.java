@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class EmployeeController {
-	final EmployeeDaoImpl employeeDaoI;
+	private final EmployeeDaoImpl employeeDaoI;
 
 	public EmployeeController(EmployeeDaoImpl employeeDaoI) {
 		this.employeeDaoI = employeeDaoI;
