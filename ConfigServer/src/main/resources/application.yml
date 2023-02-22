@@ -1,12 +1,12 @@
+server:
+  port: 8085
 spring:
   application:
     name: CONFIG-SERVER
 
-eureka:
-  instance:
-    prefer-ip-address: true
-  client:
-    fetch-registry: true
-    register-with-eureka: true
-    service-url:
-      defaultZone: http://localhost:8761/eureka
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/itsshivama/config-server.git
+          clone-on-start: true
